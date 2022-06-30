@@ -30,7 +30,7 @@ body{
     background-size: auto 100vh;
   }
 }
-#main_form, #finalStory{
+#main_form, #finalStory, #disclaimer{
   width: 80%;
   background-color: rgba(160, 160, 160, 0.6);
   margin:10px;
@@ -43,4 +43,8 @@ body{
 }
 input{
   padding: 2px;
+}
+h1{
+  color: whitesmoke;
+  font-size: 3rem;
 }
