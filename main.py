@@ -15,7 +15,7 @@ twilight_model = saved_model.load("./twilightify")
 philip_model = saved_model.load("./Philipify")
 
 @app.get("/")
-def get_twilight(q:str = "What manner of sorcery is this?",chars:int=1000):
+def get_twilight(q:str = "Twilight:",chars:int=1000):
   states = None
   next_char = constant([q])
   result = [next_char]
@@ -27,7 +27,7 @@ def get_twilight(q:str = "What manner of sorcery is this?",chars:int=1000):
   return {"result": result[0].numpy().decode('utf-8')}
 
 @app.get("/philip")
-def get_philip(q:str = "Twilight:",chars:int=1000):
+def get_philip(q:str = "What manner of sorcery is this?",chars:int=1000):
   states = None
   next_char = constant([q])
   result = [next_char]
